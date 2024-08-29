@@ -190,7 +190,7 @@ main {
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-    background-image: url('/images/next.png');
+    background-image: url('./images/next.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
