@@ -16,6 +16,19 @@ a {
     color: rgba(126, 126, 130, 1);
 }
 
+button {
+    text-decoration: none;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+button:hover,
+a:hover {
+    color: red;
+    transition: 1s;
+}
+
 .container {
     max-width: 1120px;
     margin: 0 auto;
@@ -35,6 +48,7 @@ header {
 
 .header__wrap {
     display: flex;
+    /* align-items: center; */
     justify-content: space-between;
 }
 
@@ -109,8 +123,9 @@ header {
     margin-right: 32px;
 }
 
-.services__info-wrap p {
+.services__info-wrap button {
     margin-right: 8px;
+    font-size: 16px;
 }
 
 /* SERVICES ===============================================*/
@@ -197,13 +212,15 @@ main {
 
 /* MAIN ===============================================*/
 
-@media (max-width: 768px) {
+@media (max-width: 1102px) {
     .service-nav {
         overflow-x: scroll;
         flex-wrap: nowrap;
     }
+}
 
-    .services__info-wrap p {
+@media (max-width: 768px) {
+    .services__info-wrap {
         display: none;
     }
 
@@ -255,12 +272,12 @@ main {
     .header__icon-cps {
         border-left: none;
         border-right: 2px solid rgba(234, 234, 234, 1);
-        margin: -25px;
+        margin-left: -25px;
         padding-right: 25px;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
     .header__wrap {
         justify-content: space-between;
     }
