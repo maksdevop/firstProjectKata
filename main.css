@@ -164,11 +164,8 @@ body {
 
 /* MAIN ===============================================*/
 
-main {
-    margin-top: 7px;
-}
-
 .main__wrap {
+    margin: 30px 25px 0 32px;
     display: flex;
     flex-direction: column;
 }
